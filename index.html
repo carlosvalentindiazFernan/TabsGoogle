@@ -7,12 +7,34 @@
   </head>
   <body>
 
-    <nav>
-    <nav>
+    <nav class="tabHeader">
+      <ul class="tabContainer">
+        <li class="tabItem">tab 1</li>
+        <li class="tabItem">tab 2</li>
+        <li class="tabItem">tab 3</li>
+      </ul>
+    </nav>
+
+    <section class="tabContent">
+
+      <div class="tabForm">
+        <!-- form section only visible if first tab is selected -->
+        <form>
+          <input type="text" name="tabName" class="input">
+          <input type="text" name="tabContentTitle" class="input">
+          <input type="text" name="tabContentParagraph" class="input">
+
+          <button type="submit">Agregar Tab</button>
+        </form>
+      </div>
+
+      <div class="tabContentContainer">
+        <h3 class="contentTitle">lorem</h3>
+        <p class="contentParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet animi ullam, quisquam nostrum, consequuntur beatae qui deleniti in. Recusandae magnam laborum, doloremque repellat praesentium nemo cumque quo quas obcaecati eaque.</p>
+      </div>
 
     <section>
-    <section>
 
-  </body>
   <script src="js/style.js"></script>
+  </body>
 </html>
