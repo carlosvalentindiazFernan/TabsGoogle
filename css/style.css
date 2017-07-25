@@ -1,0 +1,69 @@
+:root{
+  --colorPrimary: #199EC7;
+  --colorAccent: #40BC86;
+  --colorSecond: #EC555C;
+  --colorSecondAccent: #FCB410;
+  --colorBody: #fff;
+  --colorTextPrimary:  #fff;
+  --colorTextSecond: #0000;
+}
+
+
+body{
+  background: var(--colorBody);
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+}
+
+ul{
+  background:
+}
+
+
+nav {
+  background: var(--colorAccent);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  border-bottom: 5px solid var(--colorAccent);
+  background-color: var(--colorPrimary);
+}
+
+li:hover{
+  background: var(--colorAccent);
+  color: var(--colorTextPrimary);
+}
+
+li {
+  cursor: pointer;
+  color: var(--colorTextPrimary);
+  height: 30px;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+
+}
+.tabForm{
+}
+
+#tabContent{
+  color: var(--colorTextPrimary);
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 10%;
+  background: var(--colorSecond);
+  width: 80%;
+  margin-left: 10%;
+}
+
+input{
+  height: 50px;
+  width: 50%;
+}
