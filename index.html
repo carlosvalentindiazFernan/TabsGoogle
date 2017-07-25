@@ -8,33 +8,37 @@
   </head>
   <body>
 
-    <nav id="tabHeader">
-      <ul class="tabContainer">
-        <li class="tabItem">tab 1</li>
-        <li class="tabItem">tab 2</li>
-        <li class="tabItem">tab 3</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav id="tabHeader">
+        <ul class="tabContainer">
+          <li class="tabItem mainTab active" style="margin-left: 0;">Add</li>
 
-    <section id="tabContent">
+        </ul>
+      </nav>
 
-      <div class="tabForm">
-        <!-- form section only visible if first tab is selected -->
-        <form class="appendTabForm">
-          <input type="text" name="tabName" class="input">
-          <input type="text" name="tabContentTitle" class="input">
-          <input type="text" name="tabContentParagraph" class="input">
-          <br>
-          <button type="submit">Agregar Tab</button>
-        </form>
-      </div>
+      <section id="tabContent">
 
-      <div class="tabContentContainer">
-        <h3 class="contentTitle">lorem</h3>
-        <p class="contentParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet animi ullam, quisquam nostrum, consequuntur beatae qui deleniti in. Recusandae magnam laborum, doloremque repellat praesentium nemo cumque quo quas obcaecati eaque.</p>
-      </div>
+        <div class="tabForm">
+          <h3>Agregar nueva tab</h3>
+          <!-- form section only visible if first tab is selected -->
+          <form class="appendTabForm">
+            <input type="text" name="tabName" class="input" required placeholder="Nombre del tab">
+            <input type="text" name="tabContentTitle" class="input" required placeholder="Titulo del contenido">
+            <input type="text" name="tabContentParagraph" class="input" required placeholder="Contenido">
+            <br>
+            <button type="submit">Agregar Tab</button>
+          </form>
+        </div>
 
-    <section>
+        <div class="tabContentContainer hidden">
+          <h3 class="contentTitle">lorem</h3>
+          <p class="contentParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet animi ullam, quisquam nostrum, consequuntur beatae qui deleniti in. Recusandae magnam laborum, doloremque repellat praesentium nemo cumque quo quas obcaecati eaque.</p>
+        </div>
+
+      </section>      
+    </div>
+
+
 
   <script src="js/style.js"></script>
   </body>
