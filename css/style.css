@@ -6,6 +6,7 @@
   --colorBody: #fff;
   --colorTextPrimary:  #fff;
   --colorTextSecond: #0000;
+  --grayLight: #F5F5F5;
 }
 
 
@@ -15,76 +16,107 @@ body{
   margin: auto;
 }
 
-ul{
-  background:
+.hidden {
+  display: none;
 }
 
+.active {
+    box-shadow: inset 3px 9px 0px -5px #40BC86;
+    background: #fafafa !important;
+    color: #424243 !important;
+    font-weight: bold;
+}
+
+.container {
+  width: 50%;
+  margin:20px auto;
+  background-color: #fff;
+}
 
 nav {
-  background: var(--colorAccent);
+  /*background: var(--colorAccent);*/
+  background-color: transparent;
+  box-sizing: border-box;
+
 }
 
-ul {
+ul.tabContainer {
+  height: 40px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  border-bottom: 5px solid var(--colorAccent);
-  background-color: var(--colorPrimary);
+  margin-top: 1px;
+
+  /*border-bottom: 5px solid var(--colorAccent);*/
 }
 
-li:hover{
-  background: var(--colorAccent);
-  color: var(--colorTextPrimary);
+
+
+li.tabItem {
+    cursor: pointer;
+    color: var(--colorTextPrimary);
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: var(--colorAccent);
+    width: 14%;
+    margin: 0 .5% 0 .5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+
+
+}
+.tabForm, .tabContentContainer{
+    width: 50%;
+    margin: 0px auto;
+    padding: 10px;
 }
 
-li {
-  cursor: pointer;
-  color: var(--colorTextPrimary);
-  height: 30px;
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.tabForm h3, .tabContentContainer h3 {
+  text-align: left;
+  color:#424242;
+  margin:0;
+  text-transform: uppercase;
 
-
-}
-.tabForm{
 }
 
 #tabContent{
-  color: var(--colorTextPrimary);
-  text-align: center;
-  border-radius: 30px;
-  margin-top: 10%;
-  background: var(--colorSecond);
-  width: 80%;
-  margin-left: 10%;
-  -webkit-box-shadow: 1px 11px 56px 0px rgba(0,0,0,0.29);
-  -moz-box-shadow: 1px 11px 56px 0px rgba(0,0,0,0.29);
-  box-shadow: 1px 11px 56px 0px rgba(0,0,0,0.29);
+    text-align: center;
+    background-color: var(--grayLight);
+    top: 47px;
+    height: 300px;
+
 }
 
-input{
-  font-size: 20px;
-  height: 50px;
-  width: 50%;
+.input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--colorAccent);
+    margin: 10px 0;
+    display: block;
+    text-indent: 10px;
 }
 
-button{
-  color: var(--colorTextPrimary);x|
-  background: var(--colorSecond);
-  height: 50px;
-  width: 300px;
+.appendTabForm {
+  width: 100%;
+}
+.appendTabForm button {
+    display: block;
+    color: #fff;
+    height: 40px;
+    background-color: #40BC86;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
-.contentTitle{
-  font-size: 40px;
-}
-
-.contentParagraph{
-  text-align: justify;
-  width: 70%;
-  margin-left: 15%;
+.tabContentContainer p {
+  text-align: left;
 }
