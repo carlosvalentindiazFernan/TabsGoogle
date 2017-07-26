@@ -61,9 +61,30 @@ li {
   background: var(--colorSecond);
   width: 80%;
   margin-left: 10%;
+  -webkit-box-shadow: 1px 11px 56px 0px rgba(0,0,0,0.29);
+  -moz-box-shadow: 1px 11px 56px 0px rgba(0,0,0,0.29);
+  box-shadow: 1px 11px 56px 0px rgba(0,0,0,0.29);
 }
 
 input{
+  font-size: 20px;
   height: 50px;
   width: 50%;
+}
+
+button{
+  color: var(--colorTextPrimary);x|
+  background: var(--colorSecond);
+  height: 50px;
+  width: 300px;
+}
+
+.contentTitle{
+  font-size: 40px;
+}
+
+.contentParagraph{
+  text-align: justify;
+  width: 70%;
+  margin-left: 15%;
 }
