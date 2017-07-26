@@ -115,9 +115,13 @@
 
 			tabs.push(data);
 			ulContainer.appendChild(liTemplate);
+
 			let element = ulContainer.appendChild(liTemplate);
+
 			close[element.id].addEventListener("click", (event) => {
-				alert(element.id)
+
+				let tab = document.getElementById(element.id);
+				ulContainer.removeChild(tab);
 
 			});
 
@@ -131,5 +135,8 @@
 	});
 
 	mainTab.addEventListener('click',core.showAdd);
+
+
+
 
 })();
