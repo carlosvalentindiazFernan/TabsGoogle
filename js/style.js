@@ -108,7 +108,7 @@
 			let liTemplate = document.createElement('li');
 			liTemplate.classList.add('tabItem');
 			liTemplate.setAttribute('id',data.id);
-			liTemplate.innerHTML = data.tabName +' <i class="fa fa-times" aria-hidden="true"></i>';
+			liTemplate.innerHTML = data.tabName;
 
 			liTemplate.addEventListener('click',this.toggle);
 
@@ -116,14 +116,7 @@
 			tabs.push(data);
 			ulContainer.appendChild(liTemplate);
 
-			let element = ulContainer.appendChild(liTemplate);
-
-			close[element.id].addEventListener("click", (event) => {
-
-				let tab = document.getElementById(element.id);
-				ulContainer.removeChild(tab);
-
-			});
+			ulContainer.appendChild(liTemplate);
 
 			form.reset();
 		}
